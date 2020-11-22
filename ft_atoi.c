@@ -6,14 +6,13 @@
 /*   By: soekim <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/10 14:44:51 by soekim            #+#    #+#             */
-/*   Updated: 2020/11/20 11:12:31 by soekim           ###   ########.fr       */
+/*   Updated: 2020/11/22 18:26:20 by soekim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
-int		is_longint_overflow(const char *str, size_t numlen)
+static int	is_longint_overflow(const char *str, size_t numlen)
 {
 	char	*longint_max;
 
@@ -30,7 +29,7 @@ int		is_longint_overflow(const char *str, size_t numlen)
 	return (0);
 }
 
-int		is_longint_underflow(const char *str, size_t numlen)
+static int	is_longint_underflow(const char *str, size_t numlen)
 {
 	char	*longint_min;
 
@@ -47,7 +46,7 @@ int		is_longint_underflow(const char *str, size_t numlen)
 	return (0);
 }
 
-int		ft_atoi(const char *str)
+int			ft_atoi(const char *str)
 {
 	int		ret;
 	int		sign;

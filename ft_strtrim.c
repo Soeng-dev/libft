@@ -6,13 +6,13 @@
 /*   By: soekim <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/10 20:06:56 by soekim            #+#    #+#             */
-/*   Updated: 2020/11/20 15:37:28 by soekim           ###   ########.fr       */
+/*   Updated: 2020/11/22 18:21:08 by soekim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		is_element(const char *set, char c)
+static int	is_element(const char *set, char c)
 {
 	if (!set)
 		return (-1);
@@ -25,7 +25,7 @@ int		is_element(const char *set, char c)
 	return (0);
 }
 
-char	*ft_strtrim(char const *s1, char const *set)
+char		*ft_strtrim(char const *s1, char const *set)
 {
 	int		len;
 	char	*ret;

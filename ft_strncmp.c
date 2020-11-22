@@ -6,12 +6,11 @@
 /*   By: soekim <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/10 14:44:51 by soekim            #+#    #+#             */
-/*   Updated: 2020/11/17 21:03:45 by soekim           ###   ########.fr       */
+/*   Updated: 2020/11/22 18:25:51 by soekim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
